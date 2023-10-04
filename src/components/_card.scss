@@ -1,0 +1,78 @@
+@import "../utilities/utilities.scss";
+
+.row.song-card {
+    @include flex($justify: flex-start);
+    transition: all .4s ease;
+    cursor: pointer;
+    .banner-song-img {
+        min-width: 80px;
+        min-height: 80px;
+        @include flex($justify: center);
+        box-shadow: 0 8px 24px rgba(0,0,0,.5);
+        position: relative;
+        height: 100%;
+        background-color: hsla(0,0%,100%,.2);
+        img {
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+    }
+    .banner-song-content {
+        @include flex;
+        flex: 1;
+        color: #fff;
+        padding: 0 16px;
+        .title {
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+    &:hover {
+        background-color: hsla(0,0%,100%,.2);
+        .btn-play {
+            opacity: 1;
+        }
+    }
+}
+
+.col.song-card {
+    @include flex($justify: flex-start);
+    flex-direction: column;
+    transition: all .4s ease;
+    cursor: pointer;
+    height: 100%;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,.5);
+    }
+    .desc {
+        color: $text-base;
+        width: 100%;
+        .name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            padding-bottom: 4px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .author {
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: $text-sub;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}

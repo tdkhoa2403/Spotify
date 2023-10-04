@@ -1,0 +1,43 @@
+@import "../utilities/utilities.scss";
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $text-base;
+}
+ul {
+    list-style: none;
+}
+input,
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+label, .btn {
+    cursor: pointer;
+}
+
+svg {
+    fill: $text-base;
+}
+.song-area {
+    @include flex($justify: flex-start);
+    flex-direction: column;
+    margin-bottom: 16px;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+}
+.zoom {
+    transform: scale(1.03);
+    transition: 0.3;
+}

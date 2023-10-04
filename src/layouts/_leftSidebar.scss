@@ -1,0 +1,208 @@
+@import "../utilities/utilities.scss";
+
+.left-sidebar {
+    @include flex($justify: center);
+    flex-direction: column;
+    width: 280px;
+    height: 100%;
+    gap: 8px;
+    position: fixed;
+    top: 0;
+    padding: 8px 0;
+    .sidebar-box-top {
+        background-color: $background-base;
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+        cursor: default;
+        ul {
+            padding: 8px 12px;
+            li {
+                padding: 4px 12px;
+                a {
+                    @include flex($justify: flex-start);
+                    gap: 20px;
+                    height: 40px;
+                    svg {
+                        position: relative;
+                        top: -1.5px;
+                    }
+                    span {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    .sidebar-box-bottom {
+        width: 100%;
+        height: 100%;
+        @include flex($justify: flex-start);
+        flex: 1;
+        flex-direction: column;
+        min-height: 0;
+        background-color: $background-base;
+        border-radius: 8px;
+        .library {
+            @include flex($justify: flex-start);
+            flex: 1;
+            flex-direction: column;
+            min-height: 0;
+            padding-top: 0;
+            width: 100%;
+            .lib-header{
+                width: 100%;
+                height: auto;
+                .header {
+                    @include flex($justify: flex-start);
+                    gap: 8px;
+                    padding: 8px 16px;
+                    .title {
+                        @include flex($justify: flex-start);
+                        gap: 4px;
+                        margin-inline-end: auto;
+                        min-width: 0;
+                        button {
+                            background-color: transparent;
+                            color: $text-base;
+                            @include flex($justify: flex-start);
+                            flex-shrink: 0;
+                            height: 40px;
+                            min-block-size: 40px;
+                            padding: 4px 8px;
+                            fill: rgba(255, 255, 255, 0.7);
+                            .text {
+                                font-size: calc(100% + 0.2rem);
+                                color: rgba($color: #fff, $alpha: 0.7);
+                                font-weight: 700;
+                            }
+                            span {
+                                display: flex;
+                                margin-inline-end: 12px;
+                            }
+                        }
+                    }
+                    button{
+                        max-width: 100%;
+                        background-color: transparent;
+                        fill: rgba($color: #fff, $alpha: 0.7);
+                        padding: 8px;
+                    }
+                }
+                .content {
+                    margin: 8px 16px;
+                    button {
+                        padding: 8px 12px;
+                        border-radius: 20px;
+                        background-color: #272727;
+                        color: $text-base;
+                        font-weight: 700;
+                        &:first-child {
+                            margin-right: 5px;
+                        }
+                        &:hover {
+                            background-color: #333333;
+                            transition: .2s;
+                        }
+                    }
+                }
+            }
+            .lib-content {
+                width: 100%;
+                height: auto;
+                @include flex($justify: center);
+                flex-direction: column;
+                .lib-btn-controls {
+                    @include flex;
+                    width: 100%;
+                    padding: 4px 20px;
+                    .btn-search {
+                        background: transparent;
+                        opacity: 0.7;
+                        padding: 6px;
+                        border-radius: 50%;
+                        svg {
+                            position: relative;
+                            top: 1px;
+                        }
+                        &:hover {
+                            background: rgba($color: #fff, $alpha: 0.3);
+                        }
+                    }
+                    .btn-options {
+                        @include flex;
+                        color: $text-base;
+                        gap: 8px;
+                        font-size: calc(100% + 0.3rem);
+                        font-weight: 700;
+                        opacity: 0.7;
+                        cursor: pointer;
+                        svg {
+                            position: relative;
+                            top: -1px;
+                        }
+                        &:hover {
+                            opacity: 1;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .lib-list {
+                    width: 100%;
+                    height: auto;
+                    padding: 6px 10px;
+                    cursor: pointer;
+                    .list-item {
+                        border-radius: 3px;
+                        .item {
+                            @include flex($justify: flex-start);
+                            color: $text-base;
+                            gap: 12px;
+                            width: 100%;
+                            height: auto;
+                            padding: 8px 6px;
+                            .lib-img {
+                                padding: 9px 12px;
+                                background: #282828;
+                                border-radius: 3px;
+                            }
+                            .lib-desc {
+                                .title {
+                                    font-size: calc(100% + 0.6rem);
+                                    font-weight: 500;
+                                    color: #f8f8f8;
+                                }
+                                .sub-title {
+                                    @include flex($justify: flex-start);
+                                    font-size: calc(100% + .4rem);
+                                    color: #8f8f8f;
+                                    margin-top: 2px;
+                                    gap: 8px;
+                                    svg {
+                                        width: 13px;
+                                        height: 13px;
+                                    }
+                                }
+                            }
+                            &:nth-child(n+2) {
+                                .lib-img {
+                                    padding: 0;
+                                    background: transparent;
+                                    img {
+                                        width: 48px;
+                                        height: 48px;
+                                        border-radius: 50%;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                background: rgba($color: #333, $alpha: 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

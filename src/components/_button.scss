@@ -1,0 +1,26 @@
+@import "../utilities/utilities.scss";
+
+.btn-play {
+    box-shadow: 0 8px 8px rgba(0,0,0,.3);
+    transition: all .4s ease;
+    z-index: 2;
+    border-radius: 500px;
+    opacity: 0;
+    .btn-play-pri {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $btn-primary;
+        position: relative;
+        svg {
+            fill: #000;
+            position: absolute;
+            top: 12px;
+            left: 13px;
+        }
+    }
+    &:hover .btn-play-pri{
+        background-color: $btn-highlight;
+        transform: scale(1.05);
+    }
+}

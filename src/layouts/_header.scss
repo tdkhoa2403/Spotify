@@ -1,0 +1,73 @@
+@import "../utilities/utilities.scss";
+
+header {
+    @include flex;
+    height: 64px;
+    min-width: 0;
+    position: sticky;
+    top: 8px;
+    border-radius: 8px 8px 0 0;
+    .topbar {
+        @include flex($justify: space-between);
+        gap: 8px;
+        height: 64px;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        align-items: center;
+        padding: 16px 24px;
+       .arrow-btn {
+            @include flex;
+            gap: 8px;
+            button {
+                @include flex($justify: center);
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background-color: #000;
+            }
+       }
+       .primary-btn {
+            @include flex($justify: center);
+            gap: 8px;
+            .download-btn {
+                @include flex($justify: center);
+                position: relative;
+                background-color: $background-base;
+                min-block-size: 32px;
+                padding-block: 4px;
+                padding-inline: 33px 16px;
+                border-radius: 50px;
+                .download-icon {
+                    @include flex($justify: center);
+                    position: absolute;
+                    left: 12px;
+                    top: 7px;
+                    color: $text-base;
+                    font-size: calc(100% + 1rem);
+                }
+                .download-title {
+                    font-size: calc(100% + .5rem);
+                    font-weight: bold;
+                }
+                &:hover {
+                    transform: scale(1.03);
+                    transition: 0.3;
+                }
+           }
+           .avatar-btn {
+                background-color: $background-base;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                svg {
+                    fill: #fff;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    transition: 0.3;
+                }
+           }
+       }
+    }
+}
