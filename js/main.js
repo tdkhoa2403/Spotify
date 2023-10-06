@@ -4,12 +4,12 @@ const app = {
             id: "recommendedfortoday",
             songInfo: [
                 {
-                    image: "../imgs/recommendedfortoday/thieny.jpg",
+                    image: "./imgs/recommendedfortoday/thieny.jpg",
                     name: "Thiên Ý (SinKra Remix 1)",
                     author: "Jena"
                 },
                 {
-                    image: "../imgs/recommendedfortoday/ciaga.jpg",
+                    image: "./imgs/recommendedfortoday/ciaga.jpg",
                     name: "不问ciaga(不问别离)",
                     author: "指尖笑"
                 }
@@ -19,7 +19,7 @@ const app = {
             id: "jumpbackin",
             songInfo: [
                 {
-                    image: "../imgs/jumpbackin/gigachad.jpg",
+                    image: "./imgs/jumpbackin/gigachad.jpg",
                     name: "GigaChad Theme (Phonk House Version)",
                     author: "g3ox_em"
                 }
@@ -29,12 +29,12 @@ const app = {
             id: "recentlyplayed",
             songInfo: [
                 {
-                    image: "../imgs/jumpbackin/gigachad.jpg",
+                    image: "./imgs/jumpbackin/gigachad.jpg",
                     name: "GigaChad Theme (Phonk House Version)",
                     author: "g3ox_em"
                 },
                 {
-                    image: "../imgs/recommendedfortoday/ciaga.jpg",
+                    image: "./imgs/recommendedfortoday/ciaga.jpg",
                     name: "不问ciaga(不问别离)",
                     author: "指尖笑"
                 }
