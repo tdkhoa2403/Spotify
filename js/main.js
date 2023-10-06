@@ -47,7 +47,6 @@ const app = {
             this.listSong.forEach(song => {
                 if(item.id == song.id) {
                     for(let i = 0; i < song.songInfo.length; i++) {
-                        console.log(i);
                         item.innerHTML += `
                             <div class="item">
                                 <div class="col song-card">
