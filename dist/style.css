@@ -79,7 +79,7 @@ svg {
 }
 #main .container .main-view .home-page {
   width: 100%;
-  height: 1200px;
+  height: auto;
 }
 #main .container .main-view .home-page .container {
   padding: 8px 24px 0;
@@ -148,7 +148,7 @@ svg {
   position: relative;
   transition: background-color 0.3s ease;
   width: 12.5%;
-  height: 265px;
+  height: 257px;
 }
 #main .container .main-view .home-page .container .list-song .list-item .item .btn-play {
   position: absolute;
@@ -258,9 +258,8 @@ svg {
   width: 100%;
 }
 .col.song-card .desc .name {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 4px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -283,6 +282,7 @@ header {
   position: sticky;
   top: 8px;
   border-radius: 8px 8px 0 0;
+  z-index: 1000;
 }
 header .topbar {
   display: flex;
@@ -301,6 +301,7 @@ header .topbar .arrow-btn {
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  position: relative;
 }
 header .topbar .arrow-btn button {
   display: flex;
@@ -538,10 +539,10 @@ header .topbar .primary-btn .avatar-btn:hover {
   padding: 6px 10px;
   cursor: pointer;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item {
   border-radius: 3px;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -549,41 +550,40 @@ header .topbar .primary-btn .avatar-btn:hover {
   gap: 12px;
   width: 100%;
   height: auto;
-  padding: 8px 6px;
+  padding: 7px 6px;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item .lib-img {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item .lib-img {
   padding: 9px 12px;
   background: #282828;
   border-radius: 3px;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item .lib-desc .title {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item .lib-desc .title {
   font-size: calc(100% + 0.6rem);
   font-weight: 500;
   color: #f8f8f8;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item .lib-desc .sub-title {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item .lib-desc .sub-title {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: calc(100% + 0.4rem);
   color: #8f8f8f;
-  margin-top: 2px;
   gap: 8px;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item .lib-desc .sub-title svg {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item .lib-desc .sub-title svg {
   width: 13px;
   height: 13px;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item:nth-child(n+2) .lib-img {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item:nth-child(n+2) .lib-img {
   padding: 0;
   background: transparent;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item:nth-child(n+2) .lib-img img {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item:nth-child(n+2) .lib-img img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
 }
-.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .list-item .item:hover {
+.left-sidebar .sidebar-box-bottom .library .lib-content .lib-list .listSidebar-item .item:hover {
   background: rgba(51, 51, 51, 0.2);
 }
 

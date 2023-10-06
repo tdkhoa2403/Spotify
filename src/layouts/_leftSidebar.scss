@@ -153,7 +153,7 @@
                     height: auto;
                     padding: 6px 10px;
                     cursor: pointer;
-                    .list-item {
+                    .listSidebar-item {
                         border-radius: 3px;
                         .item {
                             @include flex($justify: flex-start);
@@ -161,7 +161,7 @@
                             gap: 12px;
                             width: 100%;
                             height: auto;
-                            padding: 8px 6px;
+                            padding: 7px 6px;
                             .lib-img {
                                 padding: 9px 12px;
                                 background: #282828;
@@ -177,7 +177,6 @@
                                     @include flex($justify: flex-start);
                                     font-size: calc(100% + .4rem);
                                     color: #8f8f8f;
-                                    margin-top: 2px;
                                     gap: 8px;
                                     svg {
                                         width: 13px;
