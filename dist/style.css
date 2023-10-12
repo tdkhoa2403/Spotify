@@ -199,7 +199,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item {
     grid-template-columns: repeat(7, minmax(0, 1fr));
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:last-child {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(8) {
     display: none;
   }
 }
@@ -207,7 +207,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:nth-last-child(2) {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(7) {
     display: none;
   }
 }
@@ -215,7 +215,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:nth-last-child(3) {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(6) {
     display: none;
   }
 }
@@ -223,7 +223,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:nth-last-child(4) {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(5) {
     display: none;
   }
 }
@@ -231,7 +231,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:nth-last-child(5) {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(4) {
     display: none;
   }
 }
@@ -242,7 +242,7 @@ svg {
   #main .container .main-view .home-page .container .list-song .list-item .item {
     min-width: 175px;
   }
-  #main .container .main-view .home-page .container .list-song .list-item .item:nth-last-child(6) {
+  #main .container .main-view .home-page .container .list-song .list-item .item:nth-child(3) {
     display: none;
   }
 }
