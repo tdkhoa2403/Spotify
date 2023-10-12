@@ -1,0 +1,134 @@
+@import "../utilities/utilities.scss";
+
+footer {
+    margin-top: 40px;
+    padding-bottom: 32px;
+    .footer-div {
+        width: 100%;
+        padding: 8px 16px 40px;
+        @media screen and (min-width: 992px) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        .footer-topsection {
+            margin-top: 32px;
+            @include flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @media screen and (min-width: 992px) {
+                flex-direction: row;
+            }
+            .top-link {
+                @include flex($justify: flex-start);
+                flex-flow: column wrap;
+                align-items: flex-start;
+                @media screen and (min-width: 992px) {
+                    flex: 1 1 50%;
+                    padding-bottom: 0;
+                }
+                @media screen and (min-width: 768px) {
+                    flex-direction: row;
+                }
+                .item {
+                    margin-bottom: 32px;
+                    @media screen and (min-width: 992px) {
+                        width: 181px;
+                    }
+                    @media screen and (min-width: 768px) {
+                        margin-right: 24px;
+                        width: 204px;
+                    }
+                    .title {
+                        color: $text-base;
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                    }
+                    ul li {
+                        color: $text-sub;
+                        margin: 8px 0;
+                        width: fit-content;
+                        font-size: 1.6rem;
+                        font-weight: 400;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                            color: $text-base;
+                        }
+
+                    }
+                }
+            }
+            .social-link {
+                margin-bottom: 40px;
+                .item {
+                    display: inline;
+                    padding-right: 16px;
+                    .social {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(41, 41, 41);
+                        &:hover {
+                            background-color: rgb(114, 114, 114);
+                        }
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                    }
+                }
+            }
+        } 
+        hr {
+            border-color: rgba($color: #fff, $alpha: 0.1);
+            border: 0px;
+            border-block-start: 1px solid #292929;
+            margin-block-start: 0px;
+            margin-block-end: 24px;
+        }
+        .footer-bottomsection {
+            @include flex;
+            align-items: flex-start;
+            padding-top: 16px;
+            flex-flow: column;
+            .bottom-link {
+                @include flex($justify: flex-start);
+                flex-flow: wrap;
+                margin-bottom: 8px;
+                .list-link {
+                    @include flex($justify: flex-start);
+                    flex-wrap: wrap;
+                    li {
+                        margin-right: 16px;
+                        color: $text-sub;
+                        width: fit-content;
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                        cursor: pointer;
+                        &:hover {
+                            text-decoration: underline;
+                            color: $text-base;
+                        }
+                    }
+                }
+            }
+            .copyright {
+                padding-right: 16px;
+                @include flex($justify: flex-start);
+                flex-flow: row;
+                align-items: center;
+                p {
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: $text-sub;
+                }
+            }
+            @media screen and (min-width: 992px) {
+                flex-flow: row;
+                align-items: start;
+            }
+        }
+    }
+}

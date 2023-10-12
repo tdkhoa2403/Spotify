@@ -31,6 +31,12 @@
         .title {
             font-size: 1.6rem;
             font-weight: 700;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre-wrap;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
         }
     }
     &:hover {
@@ -48,12 +54,17 @@
     cursor: pointer;
     height: 100%;
     position: relative;
-    img {
+    .itemImg {
         width: 100%;
-        object-fit: cover;
-        border-radius: 5px;
+        max-height: 143px;
         margin-bottom: 16px;
-        box-shadow: 0 8px 24px rgba(0,0,0,.5);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 0 8px 24px rgba(0,0,0,.5);
+        }
     }
     .desc {
         color: $text-base;
@@ -71,7 +82,10 @@
             color: $text-sub;
             overflow: hidden;
             text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: pre-wrap;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
         }
     }
 }

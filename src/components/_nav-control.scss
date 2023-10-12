@@ -1,0 +1,23 @@
+@import "../utilities/utilities.scss";
+
+.progress {
+    height: 5px;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+    bottom: 1.5px;
+    overflow: hidden;
+    background-color: #4d4d4d;
+    -webkit-appearance: none;
+    appearance: none;
+    &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1px;
+        height: 20px;
+        box-shadow: -650px 0 0 650px #fff;
+    }
+    &:hover::-webkit-slider-thumb {
+        box-shadow: -650px 0 0 650px #1ed760;
+    }
+}
