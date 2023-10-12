@@ -358,17 +358,7 @@ const app = {
                     imgSong.classList.add("imgSong");
                     author.classList.add("mgb-22");
                 }
-            });
-            // window.addEventListener('resize', function(event){
-            //     if(this.window.innerWidth <= 1682) {
-            //         items.forEach(item => {
-            //             const lastItem = items[items.length - 1];
-            //             if(item.offsetWidth == 169) {
-            //                 lastItem.style.display = "none";
-            //             }
-            //         });
-            //     }
-            // });                       
+            });                   
         });
     },
     start() {
